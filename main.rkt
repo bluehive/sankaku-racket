@@ -1,6 +1,6 @@
 #lang racket/gui
 ;; sankaku-racket
-;; 単位円の回転を sin/cos 波として「射影（影）」で表現する 2D統合ビュー
+;; 単位円の回転を sin/cos/tan 波として「射影（影）」で表現する 2D統合ビュー
 ;; PLAN.md の仕様に完全準拠して実装
 ;;
 ;; レイアウト:
@@ -9,6 +9,13 @@
 ;;   - コサイン波: 円の下側（横向き、振幅左右・時間下）
 ;;   - 点が反時計回りに動くと波が描かれる
 ;;   - 現在点から水平/垂直の射影線で「影の対応」を明確に表示
+;;
+;; モード切り替え (t キー):
+;;   - sin+cos モード: 従来の sin/cos 波
+;;   - tan モード: 円 + 2つの tan 波のみ (sin/cos 非表示)
+;;
+;; Developed with Grok by xAI (https://grok.x.ai)
+;; コーディングは Grok と協力して行いました。
 ;;
 ;; すべて Racket 標準ライブラリ (racket/gui + racket/draw) のみ
 

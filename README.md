@@ -1,6 +1,9 @@
 # sankaku-racket
 
-単位円の回転と sin / cos 波を「影（投影）」として結びつけるアニメーションを、**Racket 標準ライブラリのみ**で再現するプロジェクト。
+単位円の回転と sin / cos / tan 波を「影（投影）」として結びつけるアニメーションを、**Racket 標準ライブラリのみ**で再現するプロジェクト。
+
+**Developed with Grok by xAI**  
+コーディングは Grok (https://grok.x.ai) と協力して行いました。コードおよびドキュメントに明記しています。
 
 目標: https://x.com/TheMathFlow/status/2070774628713451694 のような「円の影が波になる」三次元的な描写を、最初は 2D canvas + 手動投影で実現。
 
@@ -56,8 +59,16 @@ https://download.racket-lang.org/
 
 ## ファイル
 
-- `main.rkt` : メインのアニメーション（現在は旧3Dプロトタイプ）
+- `main.rkt` : メインのアニメーション（sin+cos / tan モード切り替え対応）
 - `PLAN.md` : 改訂計画書＋詳細仕様書（モジュール名・変数名・関数名含む）
 - `README.md` : このファイル
+
+## Credits
+
+- Developed with **Grok** by xAI (https://grok.x.ai)
+- コーディングは Grok と対話しながら実装しました。
+- All code in `main.rkt` and documentation was created/modified in collaboration with Grok.
+
+## License
 
 MIT License（Racket公開時のデフォルトに従う）
