@@ -62,6 +62,7 @@ https://download.racket-lang.org/
 - `main.rkt` : メインのアニメーション（sin+cos / tan モード切り替え対応）
 - `PLAN.md` : 改訂計画書＋詳細仕様書（モジュール名・変数名・関数名含む）
 - `README.md` : このファイル
+- `LICENSE` : MIT License
 
 ## Credits
 
